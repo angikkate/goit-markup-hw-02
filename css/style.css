@@ -3,7 +3,7 @@
     --title-color: #212121;
     --text-color: #757575;
     --logo-color: #000000;
-    --second-font: 'Raleway';
+    --second-font: 'Raleway', sans-serif;
     --accent-color: #2196F3;
     --white-color: #FFFFFF;
     --bcg-grey-color: #2F303A;
@@ -13,7 +13,7 @@
  body {
     background-color: var(--white-color);
     color: var(--text-color);
-    font-family: 'Roboto';
+    font-family: 'Roboto', 'Raleway', sans-serif;
 } 
 
 a {
@@ -69,7 +69,11 @@ a {
 .header-nav .link:focus,
 .header-link .link:hover,
 .header-link .link:hover,
-.header-nav .link.current {
+.header-nav .link.current,
+.address .link:hover,
+.address .link:focus,
+.address .map:hover,
+.address .map:focus {
     color: var(--accent-color);
 } 
 
@@ -119,7 +123,6 @@ a {
 }
 
 .feature-list .text {
-    font-weight: 400;
     font-size: 14px;
     line-height: calc(24/14);
     letter-spacing: 0.03em;
@@ -140,7 +143,6 @@ a {
 }
 
 .team-list .text {
-    font-weight: 400;
     font-size: 16px;
     line-height: calc(19/16);
     text-align: center;
@@ -155,7 +157,6 @@ footer {
 .address .map {
     font-family: inherit;
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: calc(24/14);
     letter-spacing: 0.03em;
@@ -165,12 +166,12 @@ footer {
 .address .link {
     font-family: inherit;
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: calc(24/14);
     letter-spacing: 0.03em;
     color: var(--address-link);
 }
+
 
 /* Buttons */
 .button-studio {
@@ -185,6 +186,7 @@ footer {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    cursor: pointer;
 }
 
 /* Styles for Portfolio */
@@ -198,6 +200,7 @@ footer {
     line-height: calc(26/16);
     text-align: center;
     letter-spacing: 0.03em;
+    cursor: pointer;
 }
 
 .button-list .filter:hover,
@@ -216,7 +219,6 @@ footer {
 }
 
 .card-list .text {
-    font-weight: 400;
     font-size: 16px;
     line-height: calc(30/16);
     letter-spacing: 0.03em;
