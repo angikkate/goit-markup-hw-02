@@ -1,0 +1,224 @@
+/* General styles */
+:root {
+    --title-color: #212121;
+    --text-color: #757575;
+    --logo-color: #000000;
+    --second-font: 'Raleway';
+    --accent-color: #2196F3;
+    --white-color: #FFFFFF;
+    --bcg-grey-color: #2F303A;
+    --bck-team: #F5F4FA;
+    --address-link: rgba(255, 255, 255, 0.6);
+}
+ body {
+    background-color: var(--white-color);
+    color: var(--text-color);
+    font-family: 'Roboto';
+} 
+
+a {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+.header-tel {
+    text-decoration: underline;
+}
+/* Logo */
+.logo {
+    color: var(--logo-color);
+    font-family: var(--second-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31/11);
+    letter-spacing: 0.03em;
+}
+
+.logo .blue {
+    color: var(--accent-color);
+}
+
+.logo .white {
+    color: var(--white-color);
+}
+
+/* header */
+.header-nav .link {
+    color: var(--title-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
+}
+
+/* header-link  */
+.header-link .link{
+    color: var(--text-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
+}
+
+.header-nav .link:hover,
+.header-nav .link:focus,
+.header-link .link:hover,
+.header-link .link:hover,
+.header-nav .link.current {
+    color: var(--accent-color);
+} 
+
+/* Hero */
+.hero-title {
+    color: var(--white-color);
+    background-color: var(--bcg-grey-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60/44);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+/* Section */
+.section-title {
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42/36);
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.visualy-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* Features & Team titles*/
+.feature-list .title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-color);
+}
+
+.feature-list .text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+}
+/* Activities */
+
+/* Team */
+.section.team {
+    background-color: var(--bcg-team);
+}
+.team-list .title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19/16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+}
+
+.team-list .text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(19/16);
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/* Footer */
+footer {
+    background: var(--bcg-grey-color);
+}
+
+.address .map {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+}
+
+.address .link {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    color: var(--address-link);
+}
+
+/* Buttons */
+.button-studio {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    font-family: inherit; 
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30/16);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+/* Styles for Portfolio */
+.button-list .filter {
+    color: var(--title-color);
+    background-color: var(--bcg-team);
+    border-color: var(--bcg-team);
+    font-family: inherit; 
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26/16);
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.button-list .filter:hover,
+.button-list .filter:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.card-list .title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36/18);
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+}
+
+.card-list .text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(30/16);
+    letter-spacing: 0.03em;
+}
+
